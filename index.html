@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/logo.svg" type="image/x-icon">
+    <title>Quiz App</title>
+</head>
+<body>
+
+    <video autoplay muted loop class="background">
+        <source src="img/bg.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+    <div class="Start">
+
+        <div class="top">
+            <div class="logo"><img src="img/logo.svg" height="30px"><span>Quiz App</span></img></div>
+            <div><p class="dots"></p></div>
+        </div>
+
+        <div class="btn"><button id="start_btn">Start Quiz</button></div>
+
+        <div class="rules">
+            <div class="rules_title">
+                <span>Rules of This Quiz</span>
+            </div>
+            <div class="rule-list">
+                <div class="rule"><li></li> You will have only <span>15 seconds</span> per question.</div>
+                <div class="rule"><li></li> Once you select your answer, it can't be undone.</div>
+                <div class="rule"><li></li> You cannot select any option once time goes off.</div>
+                <div class="rule"><li></li> You cannot exit from the Quiz while you're playing.</div>
+                <div class="rule"><li></li> You'll get points on the basis of your correct answers.</div>
+            </div>
+            <div class="buttons">
+                <button class="exit">Exit Quiz</button>
+                <button class="Continue">Continue</button>
+            </div>
+        </div>
+
+        <div class="quiz">
+            <div class="que_container">
+                <div class="question">
+                    <div class="queBar">
+                        <div class="que_text">
+                            <!-- <h3>What does NASA stands for?</h3> -->
+                        </div>
+                        <div class="timer">
+                            <div class="time_left"><p>Time Left</p></div>
+                            <div class="sec"><p>15</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="answers">
+                    <div class="ans">
+                        <!-- <p>National Aeronautics & Space Agency</p>
+                        <i class="fa-solid fa-times"></i> -->
+                    </div>
+                    <div class="ans">
+                        <!-- <p>National Aerospace & Science Administration</p>
+                        <i class="fa-solid fa-check"></i> -->
+                    </div>
+                    <div class="ans">
+                        <!-- <p>National Aeronautics & Space Administration</p> -->
+                    </div>
+                    <div class="ans">
+                        <!-- <p>National Aeronautics & Space Agency</p> -->
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="Que_done">
+                        <!-- <span><p>1</p>Of<p>5</p>Questions</span> -->
+                    </div>
+                    <button class="next">Next Que</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="result_box">
+            <div class="icon">
+                <img src="img/crown.png">
+            </div>
+            <div class="complete_text">You've completed the Quiz!</div>
+            <div class="score_text">
+                <!-- <span>You're not a Web Developer. You got only <p></p> out of <p></p> Questions Correct</span> -->
+            </div>
+            <div class="buttons">
+                <button class="Continue">Replay Quiz</button>
+                <button class="exit">Quit Quiz</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="source.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
