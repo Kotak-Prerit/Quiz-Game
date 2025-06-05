@@ -121,15 +121,14 @@ function startTimer(time){
 
 restart_quiz.onclick = () => {
     result_box.classList.remove('activeresult');
-    quiz.classList.add('activeQuiz')
-    let que_count = 0;
-    let que_num = 1;
-    let clock;
-    let timeValue = 15;
-    let score = 0;
+    quiz.classList.add('activeQuiz');
+    que_count = 0;
+    que_num = 1;
+    timeValue = 15;
+    score = 0;
+    clearInterval(clock);
     showQuetions(que_count);
     counter(que_num);
-    clearInterval(clock);
     startTimer(15);
     next_btn.style.display = "none";
 }
@@ -149,7 +148,6 @@ next_btn.onclick = () =>{
     next_btn.style.display = "none";
     }
     else{
-        console.log('questions completed');
         showResultbox();
     }
 }
